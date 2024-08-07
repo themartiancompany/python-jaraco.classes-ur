@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
+# Maintainer: Pellegrino Prevete (tallero) <pellegrinoprevete@gmail.com>
 # Maintainer: Chih-Hsuan Yen <yan12125@archlinux.org>
 # Contributor: Kyle Keen <keenerd@gmail.com>
 
@@ -36,3 +40,4 @@ package() {
 }
 
 # vim:set ts=2 sw=2 et:
+
