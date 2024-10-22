@@ -29,8 +29,8 @@ license=(
   'MIT'
 )
 depends=(
-  'python'
-  'python-more-itertools'
+  "${_py}>=${_pymajver}"
+  "${_py}-more-itertools"
 )
 makedepends=(
   "${_py}-build"
@@ -44,10 +44,10 @@ checkdepends=(
   "${_py}-pip"
 )
 conflicts=(
-  python-jaraco
+ "${_py}-${_proj}"
 )
 replaces=(
-  python-jaraco
+ "${_py}-${_proj}"
 )
 source=(
   "${url}/archive/refs/tags/v${pkgver}/${_pkg}-${pkgver}.tar.gz"
