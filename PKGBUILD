@@ -63,7 +63,7 @@ build() {
   cd \
     "${srcdir}/${_pkg}-${pkgver}"
   "${_py}" \
-    -m -
+    -m \
       build \
     --wheel \
     --no-isolation
