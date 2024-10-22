@@ -12,7 +12,7 @@ pkgbase = python-jaraco.classes
 	makedepends = python-installer
 	makedepends = python-setuptools-scm
 	makedepends = python-wheel
-	depends = python
+	depends = python>=3.12
 	depends = python-more-itertools
 	conflicts = python-jaraco
 	replaces = python-jaraco
