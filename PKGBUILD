@@ -5,6 +5,7 @@
 # Maintainer: Chih-Hsuan Yen <yan12125@archlinux.org>
 # Contributor: Kyle Keen <keenerd@gmail.com>
 
+
 _py="python"
 _pyver="$( \
   "${_py}" \
@@ -12,6 +13,9 @@ _pyver="$( \
     awk \
       '{print $2}')"
 _pymajver="${_pyver%.*}"
+_pyminver="${_pymajver#*.}"
+_pynextver="${_pymajver%.*}.$(( \
+  ${_pyminver} + 1))"
 _proj="jaraco"
 _pkg="${_proj}.classes"
 pkgname="${_py}-${_pkg}"
@@ -30,6 +34,7 @@ license=(
 )
 depends=(
   "${_py}>=${_pymajver}"
+  "${_py}<${_pynextver}"
   "${_py}-more-itertools"
 )
 makedepends=(
